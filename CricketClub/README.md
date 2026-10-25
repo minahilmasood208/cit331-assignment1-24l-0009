@@ -14,6 +14,6 @@ To run the website locally:
 
 ![Home Page Image](image.png)
 
-Live URL: 
+Live URL: https://minahilmasood208.github.io/cit331-assignment1-24l-0009/
 
 
