@@ -37,3 +37,14 @@ nav ul {
 nav li {
     margin: 0;
 }
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav > ul {
+    border: none;
+}
