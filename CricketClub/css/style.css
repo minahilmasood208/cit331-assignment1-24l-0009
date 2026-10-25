@@ -48,3 +48,12 @@ nav a {
 nav > ul {
     border: none;
 }
+nav a.active {
+    background-color: white;
+    color: #164734;
+    font-weight: bold;
+}
+nav a:hover {
+    background-color: #2d7052;
+    color: white;
+}
