@@ -16,4 +16,7 @@ To run the website locally:
 
 Live URL: https://minahilmasood208.github.io/cit331-assignment1-24l-0009/
 
+Vercel Link: https://cit331-assignment1-24l-0009-docs.vercel.app/
+
+
 
