@@ -12,11 +12,84 @@
     <header>
         <h1>University Cricket Club</h1>
         <p>Play Together, Grow Together!</p>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="register.html" class="active">Register</a></li>
-        </ul>
-    </nav>
-</header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="register.html" class="active">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Register for a Cricket Event</h2>
+            <p>Fill out the form below to join one of our cricket activities.</p>
+
+            <form id="registrationForm" action="#" method="post">
+                <fieldset>
+                    <legend>Student Information</legend>
+
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName"
+                           required minlength="3" maxlength="50"
+                           placeholder="Enter your full name">
+
+                    <label for="email">University Email:</label>
+                    <input type="email" id="email" name="email"
+                           required placeholder="student@example.com">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone"
+                           required pattern="03[0-9]{9}"
+                           placeholder="03001234567"
+                           title="Enter an 11-digit number starting with 03">
+
+                    <label for="event">Select an Event:</label>
+                    <select id="event" name="event" required>
+                        <option value="">Choose an event</option>
+                        <option value="Friendly Cricket Match">Friendly Cricket Match</option>
+                        <option value="Cricket Skills Workshop">Cricket Skills Workshop</option>
+                        <option value="Inter-Department Tournament">Inter-Department Tournament</option>
+                        <option value="Cricket Practice Session">Cricket Practice Session</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>How did you hear about our club?</legend>
+
+                    <input type="checkbox" id="friends" name="source" value="Friends">
+                    <label for="friends">Friends</label>
+
+                    <input type="checkbox" id="noticeBoard" name="source" value="University Notice Board">
+                    <label for="noticeBoard">University Notice Board</label>
+
+                    <input type="checkbox" id="socialMedia" name="source" value="Social Media">
+                    <label for="socialMedia">Social Media</label>
+
+                    <input type="checkbox" id="other" name="source" value="Other">
+                    <label for="other">Other</label>
+                </fieldset>
+
+                <button type="submit">Submit Registration</button>
+                <button type="reset">Clear Form</button>
+            </form>
+
+            <p id="confirmationMessage"></p>
+        </section>
+
+        <section>
+            <h2>Saved Registrations</h2>
+            <p>Your saved registrations will appear below.</p>
+
+            <ul id="registrationList"></ul>
+
+            <button type="button" id="clearAllButton">Clear All Registrations</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 University Cricket Club</p>
+    </footer>
+</body>
+</html>
